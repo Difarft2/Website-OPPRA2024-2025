@@ -1,12 +1,42 @@
+import React, { useEffect, useRef } from "react";
 import "../../css/homeCss/menu-event.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
 import { Link } from "react-router-dom";
-
-import contoh from '../../assets/img/contohevent.png'
+import contoh from "../../assets/img/contohevent.png";
 
 const Menuev = () => {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.3 } // Card terlihat 30% untuk memicu animasi
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      cardRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
+  const cards = Array(3).fill({
+    title: "Pembukaan Liga Ar Rahamat 2024",
+    text: "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    img: contoh,
+  });
+
   return (
     <div id="event">
       <div className="mev-container">
@@ -19,44 +49,27 @@ const Menuev = () => {
           </div>
         </div>
         <div className="mev-content">
-          {/* card 1 */}
-          <Card style={{ width: "18rem" }}className="card-content">
-            <Card.Img variant="top" src={contoh} className="card-img"/>
-            <Card.Body className="card-content">
-              <Card.Title className="title-card">Pembukana Liga Ar rahamat 2024</Card.Title>
-              <Card.Text className="des-card">
-                Some quick example text to build on the card title and make up the
-                bulk of the cards content.
-              </Card.Text>
-              <Link to=""><Button variant="dark">Read More</Button></Link>
-            </Card.Body>
-          </Card>
-          {/* card 2 */}
-          <Card style={{ width: "18rem" }}className="card-content">
-            <Card.Img variant="top" src={contoh} className="card-img"/>
-            <Card.Body className="card-content">
-              <Card.Title className="title-card">Pembukana Liga Ar rahamat 2024</Card.Title>
-              <Card.Text className="des-card">
-                Some quick example text to build on the card title and make up the
-                bulk of the cards content.
-              </Card.Text>
-              <Link to=""><Button variant="dark">Read More</Button></Link>
-            </Card.Body>
-          </Card>
-          {/* card 3 */}
-          <Card style={{ width: "18rem" }}className="card-content">
-            <Card.Img variant="top" src={contoh} className="card-img"/>
-            <Card.Body className="card-content">
-              <Card.Title className="title-card">Pembukana Liga Ar rahamat 2024</Card.Title>
-              <Card.Text className="des-card">
-                Some quick example text to build on the card title and make up the
-                bulk of the cards content.
-              </Card.Text>
-              <Link to=""><Button variant="dark">Read More</Button></Link>
-            </Card.Body>
-          </Card>
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              style={{ width: "18rem" }}
+              className="card-content"
+              ref={(el) => (cardRefs.current[index] = el)}
+            >
+              <Card.Img variant="top" src={card.img} className="card-img" />
+              <Card.Body>
+                <Card.Title className="title-card">{card.title}</Card.Title>
+                <Card.Text className="des-card">{card.text}</Card.Text>
+                <Link to="">
+                  <Button variant="dark">Read More</Button>
+                </Link>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
-          <Link to=""><button className="readmore-btn" >Read More For All Events</button></Link>
+        <Link to="/event">
+          <button className="readmore-btn">Read More For All Events</button>
+        </Link>
       </div>
     </div>
   );
