@@ -139,3 +139,64 @@
     font-size: 0.9rem; 
   }
 }
+
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi untuk logo */
+@keyframes logoZoom {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logo {
+  animation: logoZoom 1.5s ease-in-out;
+}
+
+.read-more-btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: scale(1.1);
+  background-color: #d28c1a;
+}
+
+/* Default sebelum elemen terlihat */
+.mp-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Ketika elemen terlihat */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .mp-container {
+    transition: opacity 1.2s ease, transform 1.2s ease;
+  }
+}

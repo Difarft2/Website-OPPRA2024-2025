@@ -21,7 +21,7 @@ const Hero=()=>{
                     ORGANISASI PELAJAR PONDOK PESANTREN MODERN AR RAHMAT
                 </h3>
                 <p className="header-description">
-                    SELAMAT DATANG DI WEBSITE OPPRA AR RAHMAT
+                    SELAMAT DATANG DI WEBSITE OPPRA AR RAHMAT MASA BAKTI 2024-2025
                 </p>
                 
             </div>

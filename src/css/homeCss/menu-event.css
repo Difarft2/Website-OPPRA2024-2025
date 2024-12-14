@@ -152,3 +152,30 @@
     font-size: 14px;
   }
 }
+
+/* Default sebelum card terlihat */
+.card-content {
+  opacity: 0;
+  transform: translateY(50px); /* Card bergerak dari bawah */
+  transition: all 0.8s ease;
+}
+
+/* Card terlihat */
+.card-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Penundaan untuk membuat card muncul satu per satu */
+.card-content:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.card-content:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.card-content:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
