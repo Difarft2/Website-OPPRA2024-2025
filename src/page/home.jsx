@@ -5,6 +5,8 @@ import Profilmini from "../components/home/profilMini";
 import Visimisi from "../components/home/visimisi";
 
 
+
+
 function Home(){
     return(
         <div>
@@ -15,6 +17,6 @@ function Home(){
             <Footer/>
         </div>
     );
-}
+};
 
-export default Home;
+export default Home2;

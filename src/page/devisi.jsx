@@ -4,7 +4,7 @@ function Devisi(){
     return(
     <div>
         <Helmet>
-            <title>Devisi | OPPRA 2024-2025</title>
+            <title>Divisi | OPPRA 2024-2025</title>
         </Helmet>
         <div>
             devisi
