@@ -12,6 +12,9 @@ import Kebersihan from "./page/subDevisi/Kebersihan"
 import Keamanan from "./page/subDevisi/Kemanan"
 import Takmir from "./page/subDevisi/Takmir"
 
+import './css/global.css'
+import Timwebsite from "./page/timWebsite";
+
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
       <Route path="/devisi" element={<Devisi/>}/>
       <Route path="/profil" element={<Profil/>}/>
       <Route path="/event" element={<Event/>}/>
+      <Route path="/timwebsite" element={<Timwebsite/>}/>
 
       {/* path sub devisi */}
       <Route path="/devisi/bot" element={<Bot/>}/>

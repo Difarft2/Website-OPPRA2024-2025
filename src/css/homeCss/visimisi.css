@@ -1,0 +1,132 @@
+.vm-container {
+    background-color: rgb(232, 171, 83);
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    margin-top: 0px;
+  }
+  
+  .vm-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .vm-card {
+    background-color: rgb(255, 209, 142);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50vw;
+    margin-top: 30px;
+  }
+  
+  .vm-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .vm-card ol {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .vm-card p{
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .vm-card ol {
+    padding-left: 20px;
+  }
+  
+  .vm-title-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding-left: 0px;
+  }
+
+  .vm-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    position: relative;
+  }
+
+  .vm-line {
+    width: 240px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .vm-line-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+
+  .vm-decor-left,
+  .vm-decor-right {
+    width: 15vw;
+    height: auto;
+    position: relative;
+    top: 24px;
+  }
+
+  .vm-decor-left{
+    left: -35px;
+  }
+
+  .vm-decor-right{
+    left: 40px;
+  }
+  
+  .vm-decor-left img,
+  .vm-decor-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .vm-card {
+      width: 90vw;
+    }
+
+    .vm-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .vm-decor-left,
+    .vm-decor-right {
+      display: none;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .vm-card {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .vm-title-text {
+      font-size: 1.5rem;
+    }
+
+    .vm-card-title {
+      font-size: 16px;
+    }
+
+    .vm-card p, .vm-card ol {
+      font-size: 12px;
+    }
+  }

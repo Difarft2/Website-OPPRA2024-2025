@@ -1,7 +1,7 @@
 # Website OPPRA 2024-2025 Ar-Rahmat
 
-**Organisasi Pelajar Pondok Pesantren Ar-Rahmat** (OPPRA) Masa Bakti 2024-2025, Bojonegoro.  
-Website ini menjadi pusat informasi tentang pengelolaan kegiatan santri serta memperkenalkan organisasi kepada masyarakat luas.
+**Organisasi Pelajar Pondok Pesantren Ar rahmat** (OPPRA) Masa Bakti 2024-2025, Bojonegoro.  
+Website ini menjadi pusat informasi tentang kegiatan santri serta memperkenalkan organisasi kepada masyarakat luas.
 
 ## **Fitur Utama**
 1. **Halaman Beranda**  
@@ -11,14 +11,14 @@ Website ini menjadi pusat informasi tentang pengelolaan kegiatan santri serta me
 
 2. **Halaman Profil**  
    - Informasi tentang sejarah, visi, dan misi organisasi.  
-   - Detail terkait Pondok Pesantren Modern Ar-Rahmat.  
+   - Detail terkait Pondok Pesantren Modern Ar Rahmat.  
 
 3. **Halaman Divisi**  
    - Struktur organisasi lengkap dengan Ketua, Wakil Ketua, Sekretaris, Bendahara, dan Kepala Divisi.  
    - Informasi visual tentang masing-masing divisi, seperti:  
      - **Divisi Keamanan**  
-     - **Divisi Kesehatan**  
-     - **Divisi BOT** (Bidang Olahraga dan Teknologi)  
+     - **Divisi Kesehatan**    
+     - **Divisi BOT** (Bela negara Olahraga dan Teknologi)  
      - **Divisi Penerangan**  
      - **Divisi Takmir**  
      - **Divisi Bahasa**  
@@ -28,7 +28,7 @@ Website ini menjadi pusat informasi tentang pengelolaan kegiatan santri serta me
    - Deskripsi singkat dan dokumentasi foto kegiatan.
 
 - **Teknologi yang Digunakan**:  
-  - **Frontend**: HTML5, CSS3, React js, dan JavaScript.  
+  - **Frontend**: HTML5, CSS3, React js, bootstrap dan JavaScript.  
   - **Backend**: - 
 ---
 
