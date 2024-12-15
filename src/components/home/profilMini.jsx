@@ -49,7 +49,7 @@ const Profilmini = () => {
           </div>
           <p className="mp-description">{profilMin}</p>
           <Link to="/profil">
-            <button className="read-more-btn">READ MORE ➝</button>
+            <button className="read-more-btn">PROFIL ➝</button>
           </Link>
         </div>
       </div>
