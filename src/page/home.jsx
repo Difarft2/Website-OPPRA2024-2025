@@ -1,9 +1,10 @@
+import { Navbar } from "react-bootstrap";
 
 
-const Home2 = () => {
+const Home = () => {
     return (
-        Home2
+        <Navbar/>
     );
 };
 
-export default Home2;
+export default Home;

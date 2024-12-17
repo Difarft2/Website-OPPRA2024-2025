@@ -11,6 +11,7 @@ import Ilan from "./page/subDevisi/Ilan"
 import Kebersihan from "./page/subDevisi/Kebersihan"
 import Keamanan from "./page/subDevisi/Kemanan"
 import Takmir from "./page/subDevisi/Takmir"
+import Artikel from "./page/artikel-contoh";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path="/devisi/takmir" element={<Takmir/>}/>
 
       {/* path sub event */}
+      <Route path="/artikel" element={<Artikel/>}/>
     </Routes>
 </Router>
   )
