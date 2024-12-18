@@ -1,0 +1,263 @@
+  .background {
+    background-color: #505050;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+  
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+.footer-so {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  width: 100vw;
+  gap: 160px;
+  margin-top: 10px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 0px;
+}
+.ico-fo {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-right a, .icon-map a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #ffcc00;
+}
+
+.icon-map a:hover{
+    color: #ffcc00;
+}
+
+.icon-map{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-map img{
+  width: 60px;
+  height: 60px;
+}
+
+.footer-copyright {
+  position: relative;
+  text-align: center;
+  font-size: 16px; 
+  color: #fff;
+  text-align: center;
+  
+}
+
+.footer-copyright p {
+  margin-bottom: 30px; 
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.links {
+  gap: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.links a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.links a:hover{
+  color: #ffcc00;
+}
+
+.fo-title-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 240px;
+}
+
+.fo-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+  position: relative;
+}
+
+.fo-line {
+  width: 240px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.fo-line-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+
+@media (max-width: 768px) {
+  svg{
+    top: 800px;
+  }
+
+  .footer-so {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-center p {
+    font-size: 14px;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .ico-fo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fo-title-text {
+    font-size: 1.2rem;
+    padding-top: 180px;
+  }
+
+  .footer-so {
+    padding: 20px;
+  }
+
+  .footer-right a {
+    font-size: 14px;
+  }
+
+  .icon-map img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fo-line {
+    width: 180px;
+  }
+}
+
+/* Default sebelum elemen terlihat */
+.footer-so > div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+/* Ketika elemen terlihat */
+.footer-so > div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Penundaan untuk tiap bagian */
+.footer-so > .footer-left {
+  transition-delay: 0.2s;
+}
+
+.footer-so > .other {
+  transition-delay: 0.4s;
+}
+
+.footer-so > .footer-right {
+  transition-delay: 0.6s;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px); /* Menggeser elemen sedikit ke bawah */
+  transition: all 0.5s ease-out; /* Transisi untuk smooth effect */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Kembali ke posisi semula */
+}
+

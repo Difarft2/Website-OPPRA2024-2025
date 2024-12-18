@@ -1,35 +1,27 @@
-import PropTypes from 'prop-types';
-import { Modal, Button } from 'react-bootstrap';
-import '../css/artikel.css';
-import { useEffect, useState } from 'react';
-import * as pdfjsLib from 'pdfjs-dist/webpack';
+import PropTypes from "prop-types";
+import { Modal, Button } from "react-bootstrap";
+import "../css/artikel.css";
+import { useEffect, useState } from "react";
+import * as mammoth from "mammoth";
 
 const Artikelcomponent = ({ title, date, main, image, content }) => {
-  const [pdfText, setPdfText] = useState('');
+  const [docHtml, setDocHtml] = useState("");
 
   useEffect(() => {
-    const loadPdfContent = async () => {
-      if (content && content.endsWith('.pdf')) {
+    const loadDocxContent = async () => {
+      if (content && content.endsWith(".docx")) {
         try {
-          const loadingTask = pdfjsLib.getDocument(content);
-          const pdf = await loadingTask.promise;
-
-          let textContent = '';
-          for (let i = 1; i <= pdf.numPages; i++) {
-            const page = await pdf.getPage(i);
-            const text = await page.getTextContent();
-            text.items.forEach((item) => {
-              textContent += item.str + ' ';
-            });
-          }
-          setPdfText(textContent);
+          const response = await fetch(content);
+          const arrayBuffer = await response.arrayBuffer();
+          const result = await mammoth.convertToHtml({ arrayBuffer });
+          setDocHtml(result.value); // Masukkan HTML yang dihasilkan oleh Mammoth.js
         } catch (error) {
-          console.error('Error loading PDF:', error);
+          console.error("Error loading DOCX:", error);
         }
       }
     };
 
-    loadPdfContent();
+    loadDocxContent();
   }, [content]);
 
   return (
@@ -38,10 +30,11 @@ const Artikelcomponent = ({ title, date, main, image, content }) => {
       <p className="article-date">{date}</p>
       <p className="article-main">{main}</p>
       <img src={image} alt="Article" className="article-image" />
-      {content.endsWith('.pdf') ? (
-        <div className="article-content">
-          <p>{pdfText}</p>
-        </div>
+      {content.endsWith(".docx") ? (
+        <div
+          className="article-content"
+          dangerouslySetInnerHTML={{ __html: docHtml }}
+        ></div>
       ) : (
         <p className="article-content">{content}</p>
       )}
@@ -77,7 +70,11 @@ export const Gambar = ({ images }) => {
             key={index}
             onClick={() => handleImageClick(img)}
           >
-            <img src={img.src} alt={`Gambar-${index + 1}`} className="grid-image" />
+            <img
+              src={img.src}
+              alt={`Gambar-${index + 1}`}
+              className="grid-image"
+            />
             <p className="grid-content">{img.content}</p>
           </div>
         ))}
@@ -87,7 +84,7 @@ export const Gambar = ({ images }) => {
       <Modal
         show={modalShow}
         onHide={() => setModalShow(false)}
-        dialogClassName='modal'
+        dialogClassName="modal"
         centered
       >
         <Modal.Header closeButton>
@@ -99,14 +96,18 @@ export const Gambar = ({ images }) => {
               <img
                 src={selectedImage.src}
                 alt="Selected"
-                style={{ width: '100%', borderRadius: '8px' }}
+                style={{ width: "100%", borderRadius: "8px" }}
               />
               <p className="mt-3">{selectedImage.content}</p>
             </>
           )}
         </Modal.Body>
         <Modal.Footer>
-          <Button className='button-modal' variant="secondary" onClick={() => setModalShow(false)}>
+          <Button
+            className="button-modal"
+            variant="secondary"
+            onClick={() => setModalShow(false)}
+          >
             Close
           </Button>
         </Modal.Footer>
