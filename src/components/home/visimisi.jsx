@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import '../../css/homeCss/visimisi.css';
-import ukir from '../../assets/img/ukir.png';
+
+import ukir from '../../assets/img/ukir.svg';
 
 const Visimisi = () => {
   const decorRefs = useRef([]);

@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 import logooppra from "../assets/logo/Logo OPPRA.svg";
-import logopondok from "../assets/logo/logopondok.png";
+import logopondok from "../assets/logo/logopondok.svg";
 import Footer from "../components/globalComponents/footer";
 
 
