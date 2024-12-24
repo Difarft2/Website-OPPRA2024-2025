@@ -25,6 +25,7 @@
 .sub{
     margin-left: 65px;
     justify-items: center;
+    justify-items: center;
 }
 
 .sub-more-btn{
@@ -56,6 +57,14 @@
     .sub-container img {
         width: 80%; 
     }
+
+    .sub-more-btn{
+        position: relative;
+        align-items: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 480px) { 
@@ -67,16 +76,24 @@
     .sub-container img {
         width: 80%; 
     }
+
+    .sub-more-btn{
+        position: relative;
+        align-items: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 30px;
+    }
 }
 
 @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(100px); /* Mulai dari bawah */
+      transform: translateY(100px); 
     }
     to {
       opacity: 1;
-      transform: translateY(0); /* Naik ke posisi normal */
+      transform: translateY(0); 
     }
   }
   

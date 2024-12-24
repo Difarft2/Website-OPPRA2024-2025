@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../../css/homeCss/profilmini.css';
-import '../../css/devisiCss/subcomponent/anggotadev.css'
-import logoOppra from '../../assets/logo/Logo OPPRA.svg';
-import { profilMin } from '../../content/profil';
-import { Link } from 'react-router-dom';
 
-const Profilmini = () => {
+const Profidev = ({ logoDevisi, profildev, judul }) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 
@@ -30,6 +25,7 @@ const Profilmini = () => {
     };
   }, []);
 
+  // Fungsi untuk memformat profildev menjadi beberapa paragraf
   const formatProfil = (profil) => {
     return profil.split('\n\n').map((paragraph, index) => (
       <p key={index} className="mp-description">{paragraph}</p>
@@ -43,27 +39,18 @@ const Profilmini = () => {
         className={`mp-container ${isVisible ? 'fade-in' : ''}`}
       >
         <div className="mp-logo">
-          <img src={logoOppra} alt="Logo opra" className="logo" />
+          <img src={logoDevisi} alt="Logo divisi" className="logo" />
         </div>
         <div className="mp-content">
           <div className="section-title">
-            <h2 className="title-text">TENTANG KAMI</h2>
-            <div className="line-container">
-              <span className="line-circle"></span>
-              <span className="line"></span>
-              <span className="line-circle"></span>
-            </div>
+            <h2 className="title-text">{judul}</h2>
           </div>
-          <div>
-            {formatProfil(profilMin)}
-          </div>
-          <Link to="/profil">
-            <button className="read-more-btn">PROFIL ➝</button>
-          </Link>
+          {/* Render profildev sebagai paragraf */}
+          {formatProfil(profildev)}
         </div>
       </div>
     </section>
   );
 };
 
-export default Profilmini;
+export default Profidev;
