@@ -14,6 +14,7 @@ import Takmir from "./page/subDevisi/Takmir"
 
 import './css/global.css'
 import Timwebsite from "./page/timWebsite";
+import Hariguru from "./page/artikel/hariguru";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Route path="/devisi/takmir" element={<Takmir/>}/>
 
       {/* path sub event */}
+      <Route path="/event/hariguru" element={<Hariguru/>}/>
     </Routes>
 </Router>
   )

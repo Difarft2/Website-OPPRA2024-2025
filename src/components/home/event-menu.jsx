@@ -1,23 +1,29 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../css/homeCss/menu-event.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import contoh from "../../assets/img/contohevent.png";
+import imghariguru from "../../content/img/hariguru/hariguru.svg";
 
 const Menuev = () => {
+  const [visibleCards, setVisibleCards] = useState([false, false, false]); // To track visibility of cards
   const cardRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          const index = cardRefs.current.indexOf(entry.target);
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            setVisibleCards((prev) => {
+              const updated = [...prev];
+              updated[index] = true; // Mark card as visible
+              return updated;
+            });
           }
         });
       },
-      { threshold: 0.3 } // Card terlihat 30% untuk memicu animasi
+      { threshold: 0.3 } // Card becomes visible when 30% of it is in the viewport
     );
 
     cardRefs.current.forEach((ref) => {
@@ -31,11 +37,26 @@ const Menuev = () => {
     };
   }, []);
 
-  const cards = Array(3).fill({
-    title: "Pembukaan Liga Ar Rahamat 2024",
-    text: "Some quick example text to build on the card title and make up the bulk of the cards content.",
-    img: contoh,
-  });
+  const cards = [
+    {
+      title: "Peringatan Hari Guru Nasional",
+      text: "Pada 25 November 2024, Pondok Pesantren Ar-Rahmat mengadakan upacara Hari Guru Nasional yang diisi dengan drama kejutan, lagu, dan penandatanganan bingkai sebagai penghargaan untuk guru.",
+      img: imghariguru,
+      link: "/event-2024", 
+    },
+    // {
+    //   title: "Pembukaan Liga Ar Rahamat 2025",
+    //   text: "An exciting new season with more thrilling moments ahead.",
+    //   img: contoh,
+    //   link: "/event-2025", 
+    // },
+    // {
+    //   title: "Pembukaan Liga Ar Rahamat 2026",
+    //   text: "The next chapter in our sports league begins.",
+    //   img: contoh,
+    //   link: "/event-2026", 
+    // },
+  ];
 
   return (
     <div id="event">
@@ -53,14 +74,14 @@ const Menuev = () => {
             <Card
               key={index}
               style={{ width: "18rem" }}
-              className="card-content"
+              className={`card-content ${visibleCards[index] ? "visible" : ""}`} // Add class if visible
               ref={(el) => (cardRefs.current[index] = el)}
             >
               <Card.Img variant="top" src={card.img} className="card-img" />
               <Card.Body>
                 <Card.Title className="title-card">{card.title}</Card.Title>
                 <Card.Text className="des-card">{card.text}</Card.Text>
-                <Link to="">
+                <Link to={card.link}>
                   <Button variant="dark">Read More</Button>
                 </Link>
               </Card.Body>
