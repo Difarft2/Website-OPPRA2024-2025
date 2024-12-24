@@ -6,8 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 import logooppra from "../assets/logo/Logo OPPRA.svg";
-import logopondok from "../assets/logo/logopondok.png";
+import logopondok from "../assets/logo/logopondok.svg";
 import Footer from "../components/globalComponents/footer";
+import { profilMin, profilsekolah } from "../content/profil";
+import { webarahmat } from "../content/link";
 
 
 function Profil(){
@@ -18,6 +20,12 @@ function Profil(){
         oppra.classList.add('animated-left');
         pondok.classList.add('animated-right');
     }, []);
+
+    const formatProfil = (profil) => {
+        return profil.split('\n\n').map((paragraph, index) => (
+          <p key={index} className="mp-description">{paragraph}</p>
+        ));
+      };
     return(
         <div>
                 <div className="bg-pr">
@@ -27,7 +35,7 @@ function Profil(){
         <div>
             <Navbar />
 
-            <div className="vm-section-title">
+            <div className="pro-section-title">
                 <h2 className="vm-title-text">PROFIL</h2>
                 <div className="vm-line-container">
                     <span className="vm-line-circle"></span>
@@ -41,25 +49,19 @@ function Profil(){
                     <img className="logo-oppra" src={logooppra} alt="Logo Oppra" />
                     <div className="tulisan-oppra">
                         <h2>OPPRA</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum
-                            dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit
-                            amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem
-                            ipsum dolor sit amet, lorem ipsum dolor sit amet.
-                        </p>
+                        <div>
+                            {formatProfil(profilMin)}
+                        </div>
                     </div>
                 </div>
                 <div className="pondok animated-right">
                     <img className="logo-pondok" src={logopondok} alt="Logo Pondok" />
                     <div className="tulisan-pondok">
                         <h2>YAYASAN PPM AR RAHMAT</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum
-                            dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit
-                            amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem
-                            ipsum dolor sit amet, lorem ipsum dolor sit amet.
-                        </p>
-                    <Button className="button-webpondok" variant="warning">Website PPM Ar Rahmat</Button>
+                        <div>
+                            {formatProfil(profilsekolah)}
+                        </div>
+                    <a href={webarahmat} target="_blank" rel="noopener noreferrer"><Button className="button-webpondok" variant="warning">Website PPM Ar Rahmat</Button></a>
             </div>
     </div>
 </div>

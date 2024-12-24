@@ -1,0 +1,24 @@
+.vm-decor-left-dev,
+.vm-decor-right-dev {
+  width: 15vw;
+  height: auto;
+  position: relative;
+  top: -118px;
+}
+
+.vm-decor-left-dev{
+    left: -155px;
+  }
+
+.vm-decor-right-dev{
+    left: -85px;
+  }
+
+  .vm-container-dev {
+    background-color: rgb(232, 171, 83);
+    padding: 20px;
+    text-align: center;
+    height: 110vh;
+    margin-top: 0px;
+  }
+

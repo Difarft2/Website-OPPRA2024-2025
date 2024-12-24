@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../css/homeCss/profilmini.css';
+import '../../css/devisiCss/subcomponent/anggotadev.css'
 import logoOppra from '../../assets/logo/Logo OPPRA.svg';
-import profilMin from '../../content/profil';
+import { profilMin } from '../../content/profil';
 import { Link } from 'react-router-dom';
 
 const Profilmini = () => {
@@ -29,6 +30,12 @@ const Profilmini = () => {
     };
   }, []);
 
+  const formatProfil = (profil) => {
+    return profil.split('\n\n').map((paragraph, index) => (
+      <p key={index} className="mp-description">{paragraph}</p>
+    ));
+  };
+
   return (
     <section className="mp-section" id="profilMini">
       <div
@@ -47,7 +54,9 @@ const Profilmini = () => {
               <span className="line-circle"></span>
             </div>
           </div>
-          <p className="mp-description">{profilMin}</p>
+          <div>
+            {formatProfil(profilMin)}
+          </div>
           <Link to="/profil">
             <button className="read-more-btn">PROFIL ➝</button>
           </Link>

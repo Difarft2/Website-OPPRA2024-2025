@@ -1,5 +1,5 @@
 .bg-pr{
-    background-image: url('../assets/img/lapangan.png');
+    background-image: url('../assets/img/full.svg');
     background-size: cover;
     background-position: center;
     margin-bottom: 0px;
@@ -9,7 +9,7 @@
     padding: 50px 20px;
     height: 100%;
     width: 100%;
-    margin-top: -90px;
+    margin-top: -60px;
 }
 
 .judulgede {
@@ -35,9 +35,9 @@
     height: auto;
     margin: 40px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(59, 53, 53, 0.6);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(59, 53, 53, 0.6);
 }
 
 .logo-oppra, .logo-pondok {
@@ -71,6 +71,12 @@
 .vm-section-title{
     padding-top: 130px;
     padding-bottom: 70px;
+}
+
+.pro-section-title{
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background-color: #ffd18e;
 }
 
 .vm-title-text {
