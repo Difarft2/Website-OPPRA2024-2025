@@ -3,8 +3,9 @@ import { Gambar } from '../../components/globalComponents/artikel-components';
 import Footer from '../../components/globalComponents/footer';
 import '../../css/artikel.css';
 
-import harigurudoc from '../../content/artikeldoc/hariguru.docx'
+
 import img1 from '../../content/img/hariguru/hariguru.svg'
+import Hariguruartikel from '../../content/artikeldoc/hariguru';
 
 const Hariguru = () => {
   const article = {
@@ -12,7 +13,7 @@ const Hariguru = () => {
     date: '25 November 2024 | 07.00 WIB',
     main: 'Pada 25 November 2024, Pondok Pesantren Ar-Rahmat mengadakan upacara Hari Guru Nasional yang diisi dengan drama kejutan, lagu, dan penandatanganan bingkai sebagai penghargaan untuk guru.',
     image: img1,
-    content: harigurudoc,
+    content: <Hariguruartikel/>,
     pembuat: 'M. Faiz Alif Yulistiawan',
     ig: '@fay_368',
     linkig: 'https://www.instagram.com/fay_368?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='

@@ -1,28 +1,10 @@
 import PropTypes from "prop-types";
 import { Modal, Button } from "react-bootstrap";
 import "../../css/artikel.css";
-import { useEffect, useState } from "react";
-import * as mammoth from "mammoth";
+import { useState } from "react";
 
 const Artikelcomponent = ({ title, date, main, image, content, pembuat, ig, linkig }) => {
-  const [docHtml, setDocHtml] = useState("");
 
-  useEffect(() => {
-    const loadDocxContent = async () => {
-      if (content && content.endsWith(".docx")) {
-        try {
-          const response = await fetch(content);
-          const arrayBuffer = await response.arrayBuffer();
-          const result = await mammoth.convertToHtml({ arrayBuffer });
-          setDocHtml(result.value); // Masukkan HTML yang dihasilkan oleh Mammoth.js
-        } catch (error) {
-          console.error("Error loading DOCX:", error);
-        }
-      }
-    };
-
-    loadDocxContent();
-  }, [content]);
 
   return (
     <div >
@@ -34,14 +16,11 @@ const Artikelcomponent = ({ title, date, main, image, content, pembuat, ig, link
         
         <p className="article-main">{main}</p>
         <img src={image} alt="Article" className="article-image" />
-        {content.endsWith(".docx") ? (
           <div
             className="article-content"
-            dangerouslySetInnerHTML={{ __html: docHtml }}
-          ></div>
-        ) : (
-          <p className="article-content">{content}</p>
-        )}
+          >
+            {content}
+          </div>
       </div>
     </div>
   );

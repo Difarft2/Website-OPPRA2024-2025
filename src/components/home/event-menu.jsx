@@ -42,7 +42,7 @@ const Menuev = () => {
       title: "Peringatan Hari Guru Nasional",
       text: "Pada 25 November 2024, Pondok Pesantren Ar-Rahmat mengadakan upacara Hari Guru Nasional yang diisi dengan drama kejutan, lagu, dan penandatanganan bingkai sebagai penghargaan untuk guru.",
       img: imghariguru,
-      link: "/event-2024", 
+      link: "/event/hariguru", 
     },
     // {
     //   title: "Pembukaan Liga Ar Rahamat 2025",

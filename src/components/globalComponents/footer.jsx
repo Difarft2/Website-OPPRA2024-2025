@@ -41,8 +41,8 @@ const Footer = () => {
             <div id="sosialMedia">
                 <footer>
                     {/* Background Wave Animation */}
-                    <div className="background">
-                        <svg
+                    <div className="background" >
+                        {/* <svg
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 1600 900"
@@ -57,7 +57,7 @@ const Footer = () => {
                                     s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
                                 />
                             </defs>
-                            <g>
+                            <g className="wave-animation">
                                 <use xlinkHref="#wave" opacity=".4">
                                     <animateTransform
                                         attributeName="transform"
@@ -70,7 +70,7 @@ const Footer = () => {
                                         repeatCount="indefinite"
                                     />
                                 </use>
-                                <use xlinkHref="#wave" opacity=".6">
+                                <use xlinkHref="#wave" opacity=".9">
                                     <animateTransform
                                         attributeName="transform"
                                         type="translate"
@@ -95,7 +95,7 @@ const Footer = () => {
                                     />
                                 </use>
                             </g>
-                        </svg>
+                        </svg> */}
                     </div>
 
                     {/* Section Title */}
@@ -110,7 +110,7 @@ const Footer = () => {
 
                     {/* Footer Content */}
                     <div className="footer-so">
-                        <div className="footer-left" ref={(el) => (footerContentRefs.current[0] = el)}>
+                        <div className="footer-left" ref={(el) => (footerContentRefs.current[1] = el)}>
                             <div className="icon-map">
                                 <img src={mapico} alt="Map Logo" />
                                 <p>
@@ -121,19 +121,19 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="other" ref={(el) => (footerContentRefs.current[1] = el)}>
+                        <div className="other" ref={(el) => (footerContentRefs.current[2] = el)}>
                             <nav>
                                 <ul className="links">
                                     <li><Link to="/">BERANDA</Link></li>
                                     <li><a href="/#event">EVENT</a></li>
                                     <li><Link to="/devisi">DIVISI</Link></li>
-                                    <li><a href="/#sosialMedia">SOSIAL MEDIA</a></li>
-                                    <li><Link to="/timwebsite">TIM</Link></li>
+                                    <li><a href="#sosialMedia">SOSIAL MEDIA</a></li>
+                                    {/* <li><Link to="/timwebsite">TIM</Link></li> */}
                                 </ul>
                             </nav>
                         </div>
 
-                        <div className="footer-right" ref={(el) => (footerContentRefs.current[2] = el)}>
+                        <div className="footer-right" ref={(el) => (footerContentRefs.current[3] = el)}>
                             {[
                                 { href: igoppra, icon: igIco, text: '@oppra_arrahmat' },
                                 { href: igarmaso, icon: igIco, text: '@armaso_arrahmat' },
