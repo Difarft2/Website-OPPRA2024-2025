@@ -32,7 +32,7 @@ const Navbarr = () => {
                             <p><Nav.Link href="/#event">EVENT</Nav.Link></p>
                             <p><Nav.Link href="/devisi">DIVISI</Nav.Link></p>
                             <p><Nav.Link href="#sosialMedia">SOSIAL MEDIA</Nav.Link></p>
-                            <p><Nav.Link href="/timwebsite">TIM</Nav.Link></p>
+                            {/* <p><Nav.Link href="/timwebsite">TIM</Nav.Link></p> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

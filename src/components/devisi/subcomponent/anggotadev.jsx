@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import ukir from '../../../assets/img/ukir.svg';
 
 const Anggota = ({ kelas11, kelas9 }) => {
   const decorRefs = useRef([]);
@@ -17,20 +16,12 @@ const Anggota = ({ kelas11, kelas9 }) => {
       { threshold: 0.3 } // Elemen terlihat 30% untuk memicu animasi
     );
 
-    // Observasi elemen decor
-    decorRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
     // Observasi elemen card
     cardRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      decorRefs.current.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
       cardRefs.current.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
@@ -48,12 +39,6 @@ const Anggota = ({ kelas11, kelas9 }) => {
         </div>
       </div>
       <div className="vm-content">
-        <div
-          className="vm-decor-left-dev"
-          ref={(el) => (decorRefs.current[0] = el)}
-        >
-          <img src={ukir} alt="Decor Left" />
-        </div>
         <div className="vm-card-container">
           <div className="vm-card" ref={(el) => (cardRefs.current[0] = el)}>
             <h3 className="vm-card-title">Kelas 11</h3>
@@ -72,12 +57,6 @@ const Anggota = ({ kelas11, kelas9 }) => {
               ))}
             </ol>
           </div>
-        </div>
-        <div
-          className="vm-decor-right-dev"
-          ref={(el) => (decorRefs.current[1] = el)}
-        >
-          <img src={ukir} alt="Decor Right" />
         </div>
       </div>
     </div>
