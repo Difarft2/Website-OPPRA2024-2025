@@ -124,11 +124,10 @@ const Footer = () => {
                         <div className="other" ref={(el) => (footerContentRefs.current[2] = el)}>
                             <nav>
                                 <ul className="links">
-                                    <li><Link to="/">BERANDA</Link></li>
-                                    <li><a href="/#event">EVENT</a></li>
-                                    <li><Link to="/devisi">DIVISI</Link></li>
-                                    <li><a href="#sosialMedia">SOSIAL MEDIA</a></li>
-                                    {/* <li><Link to="/timwebsite">TIM</Link></li> */}
+                                    <li ><Link to="/">BERANDA</Link></li>
+                                    <li ><Link to="/devisi">DIVISI</Link></li>
+                                    <li ><Link to="/#soialMedia">SOSIAL MEDIA</Link></li>
+                                    <li><Link to="/timwebsite">TIM</Link></li>
                                 </ul>
                             </nav>
                         </div>

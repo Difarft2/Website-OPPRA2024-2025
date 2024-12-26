@@ -20,31 +20,31 @@ import Hariguru from "./page/artikel/hariguru";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop/>
-      <Routes>  
+    <Router basename="/web2024/" >
+      <ScrollToTop />
+      <Routes>
         {/* home */}
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
 
         {/* path utama */}
-        <Route path="/devisi" element={<Devisi/>}/>
-        <Route path="/profil" element={<Profil/>}/>
-        <Route path="/event" element={<Event/>}/>
-        <Route path="/timwebsite" element={<Timwebsite/>}/>
+        <Route path="/devisi" element={<Devisi />} />
+        <Route path="/profil" element={<Profil />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/timwebsite" element={<Timwebsite />} />
 
         {/* path sub devisi */}
-        <Route path="/devisi/bot" element={<Bot/>}/>
-        <Route path="/devisi/bahasa" element={<Bahasa/>}/>
-        <Route path="/devisi/ilan" element={<Ilan/>}/>
-        <Route path="/devisi/kesehatan" element={<Kebersihan/>}/>
-        <Route path="/devisi/keamanan" element={<Keamanan/>}/>
-        <Route path="/devisi/takmir" element={<Takmir/>}/>
+        <Route path="/devisi/bot" element={<Bot />} />
+        <Route path="/devisi/bahasa" element={<Bahasa />} />
+        <Route path="/devisi/ilan" element={<Ilan />} />
+        <Route path="/devisi/kesehatan" element={<Kebersihan />} />
+        <Route path="/devisi/keamanan" element={<Keamanan />} />
+        <Route path="/devisi/takmir" element={<Takmir />} />
 
         {/* path sub event */}
-        <Route path="/event/hariguru" element={<Hariguru/>}/>
+        <Route path="/event/hariguru" element={<Hariguru />} />
       </Routes>
-  </Router>
-  )
+    </Router>
+  );
 }
 
 export default App
