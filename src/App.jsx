@@ -16,6 +16,9 @@ import Keamanan from "./page/subDevisi/Kemanan"
 import Takmir from "./page/subDevisi/Takmir"
 
 import Hariguru from "./page/artikel/hariguru";
+import Mastaf from "./page/artikel/mastaf";
+import Mufes from "./page/artikel/mufest";
+import Agustus from "./page/artikel/17 agustus ";
 
 
 function App() {
@@ -42,6 +45,9 @@ function App() {
 
         {/* path sub event */}
         <Route path="/event/hariguru" element={<Hariguru />} />
+        <Route path="/event/mastaf2024" element={<Mastaf/>} />
+        <Route path="/event/mufes" element={<Mufes/>} />
+        <Route path="/event/17agustus" element={<Agustus/>} />
       </Routes>
     </Router>
   );

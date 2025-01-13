@@ -47,25 +47,49 @@ const PH = () => {
           className="seketaris1 animate-from-left"
           ref={(el) => (cardRefs.current[0] = el)}
         >
+        <a
+          href="https://www.instagram.com/alfuryy.f/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={seketaris1} alt="seketaris1" className="seketaris1-img" />
+        </a>
         </div>
         <div
           className="seketaris2 animate-from-right"
           ref={(el) => (cardRefs.current[1] = el)}
         >
+        <a
+          href="https://www.instagram.com/isme.udden/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={seketaris2} alt="seketaris2" className="seketaris2-img" />
+        </a>
         </div>
         <div
           className="bendahara1 animate-from-left"
           ref={(el) => (cardRefs.current[2] = el)}
         >
+        <a
+          href="https://www.instagram.com/myqqi_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={bendahara1} alt="bendahara1" className="bendahara1-img" />
+        </a>
         </div>
         <div
           className="bendahara2 animate-from-right"
           ref={(el) => (cardRefs.current[3] = el)}
         >
+        <a
+          href="https://www.instagram.com/athaillahabi10/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={bendahara2} alt="bendahara2" className="bendahara2-img" />
+        </a>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ export const profilMin = `Organisasi Pelajar Pondok Pesantren Modern Ar-Rahmat (
 Berdiri dengan semangat kolaborasi dan kebersamaan, OPPRA bertujuan untuk membentuk generasi muda yang berakhlak mulia, berjiwa pemimpin, dan siap menghadapi tantangan masa depan dengan bekal ilmu agama dan pengetahuan modern.`;
 
 // Profil Pondok Pesantren Modern Ar-Rahmat
-export const profilsekolah = `Pondok Pesantren Modern Ar-Rahmat Bojonegoro, sebagai benteng moral generasi bangsa, didirikan pada 19 Mei 2023 atas wakaf seorang pengusaha dermawan yakni H. Rahmat dan Istrinya, Ibu Hj. Siti Fathonah. Pondok pesantren ini dikelola oleh Yayasan Pondok Pesantren Ar-Rahmat dengan tujuan mulia mencetak generasi berprestasi dan berakhlak mulia, dengan KH. Alamul Huda Masyhur sebagai ketua pertama dan Dr. H. Basuki. M. Pd. M.Pd.I. sebagai kepala sekolah pertama.
+export const profilsekolah = `Pondok Pesantren Modern Ar-Rahmat Bojonegoro, sebagai benteng moral generasi bangsa, didirikan pada 19 Mei 2003 atas wakaf seorang pengusaha dermawan yakni H. Rahmat dan Istrinya, Ibu Hj. Siti Fathonah. Pondok pesantren ini dikelola oleh Yayasan Pondok Pesantren Ar-Rahmat dengan tujuan mulia mencetak generasi berprestasi dan berakhlak mulia, dengan KH. Alamul Huda Masyhur sebagai ketua pertama dan Dr. H. Basuki. M. Pd. M.Pd.I. sebagai kepala sekolah pertama.
 
 PPM Ar-Rahmat beralamatkan di Jl. Untung Suropati No. 48 Bojonegoro, Sumbang, Kec. Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62115. Berjalannya waktu, Pondok Pesantren Ar-Rahmat telah meraih berbagai prestasi di bidang akademik maupun non-akademik, didukung berbagai program unggulan untuk mengembangkan potensi santri. Selain itu, fasilitas yang memadai dirancang untuk mendukung berbagai aktivitas santri. 
 

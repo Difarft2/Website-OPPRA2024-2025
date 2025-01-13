@@ -17,7 +17,10 @@ const teamData = {
     articleTeam: [
       { name: "Faiz Alif Yulistiawan", role: "Content Writer", instagram: "https://www.instagram.com/fay_368/" },
       { name: "Giannini Valentino", role: "Content Writer", instagram: "https://www.instagram.com/gianinni_v/" },
-      { name: "Ricardo Valentino", role: "Content Writer", instagram: "https://www.instagram.com/_richardo_v/" },
+      { name: "Richardo Valentino", role: "Content Writer", instagram: "https://www.instagram.com/_richardo_v/" },
+      { name: "Giovanov Dia Putra Agung", role: "Content Writer", instagram: "https://www.instagram.com/_littleman21/" },
+      { name: "M Ilzam Ahlulfikri AL", role: "Content Writer", instagram: "https://www.instagram.com/ilzaam18/" },
+      { name: "M.Fikri Haikal Ardiananta", role: "Content Writer", instagram: "https://www.instagram.com/fikriihaikalll/" },
     ],
   };
 

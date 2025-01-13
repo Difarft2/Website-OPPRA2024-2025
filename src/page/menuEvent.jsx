@@ -7,6 +7,8 @@ import Footer from "../components/globalComponents/footer";
 
 
 import imghariguru from "../content/img/hariguru/hariguru.svg";
+import imgmastaf from '../content/img/mastaf/Pelaksanaan Out Bond .jpg'
+import imgmufest from '../content/img/mufest/img1.jpg'
 
 
 function Event(){
@@ -48,18 +50,24 @@ function Event(){
           img: imghariguru,
           link: "/event/hariguru", 
         },
-        // {
-        //   title: "Pembukaan Liga Ar Rahamat 2025",
-        //   text: "An exciting new season with more thrilling moments ahead.",
-        //   img: contoh,
-        //   link: "/event-2025", 
-        // },
-        // {
-        //   title: "Pembukaan Liga Ar Rahamat 2026",
-        //   text: "The next chapter in our sports league begins.",
-        //   img: contoh,
-        //   link: "/event-2026", 
-        // },
+        {
+      title: "MASTAF (Masa Taaruf) Santri ",
+      text: "Mastaf adalah program pembukaan yang diadakan oleh PPM Ar-Rahmat untuk menyambut santri baru SMP maupun SMA.",
+      img: imgmastaf,
+      link: "/event/mastaf2024", 
+        },
+    {
+      title: "MUFEST (Muharram Festival)",
+      text: "Dalam rangka memperingati Muharram 1446 H, Organisasi Pelajar Pondok Pesantren Ar-Rahmat (OPPRA) mengadakan event spesial yang selalu ditunggu-tunggu oleh para santri setiap tahun, yang bernama “MUFEST”.",
+      img: imgmufest,
+      link: "/event/mufes", 
+    },
+    {
+      title: "Peringatan HUT RI ke 79 ",
+      text: "Dalam memperingati Hari Ulang Tahun Republik Indonesia yang ke-79 Pondok Pesantren Modern Ar-Rahmat mengadakan Upacara 17 Agustus yang berlangsung dengan Khidmat dan Classmeet yang di isi dengan berbagai perlombaan.",
+      img: imghariguru,
+      link: "/event/17agustus",
+    },
       ];
 
     return(

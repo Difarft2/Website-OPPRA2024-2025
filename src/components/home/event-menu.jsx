@@ -3,7 +3,10 @@ import "../../css/homeCss/menu-event.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import imghariguru from "../../content/img/hariguru/hariguru.svg";
+
+import img17 from "../../content/img/17/img1.jpg";
+import imgmastaf from '../../content/img/mastaf/Pelaksanaan Out Bond .jpg'
+import imgmufest from '../../content/img/mufest/img1.jpg'
 
 const Menuev = () => {
   const [visibleCards, setVisibleCards] = useState([false, false, false]); // To track visibility of cards
@@ -39,23 +42,24 @@ const Menuev = () => {
 
   const cards = [
     {
-      title: "Peringatan Hari Guru Nasional",
-      text: "Pada 25 November 2024, Pondok Pesantren Ar-Rahmat mengadakan upacara Hari Guru Nasional yang diisi dengan drama kejutan, lagu, dan penandatanganan bingkai sebagai penghargaan untuk guru.",
-      img: imghariguru,
-      link: "/event/hariguru", 
+      title: "Peringatan HUT RI ke 79 ",
+      text: "Dalam memperingati Hari Ulang Tahun Republik Indonesia yang ke-79 Pondok Pesantren Modern Ar-Rahmat mengadakan Upacara 17 Agustus yang berlangsung dengan Khidmat dan Classmeet yang di isi dengan berbagai perlombaan.",
+      img: img17,
+      link: "/event/17agustus", 
     },
-    // {
-    //   title: "Pembukaan Liga Ar Rahamat 2025",
-    //   text: "An exciting new season with more thrilling moments ahead.",
-    //   img: contoh,
-    //   link: "/event-2025", 
-    // },
-    // {
-    //   title: "Pembukaan Liga Ar Rahamat 2026",
-    //   text: "The next chapter in our sports league begins.",
-    //   img: contoh,
-    //   link: "/event-2026", 
-    // },
+    {
+      title: "MASTAF (Masa Taaruf) Santri ",
+      text: "Mastaf adalah program pembukaan yang diadakan oleh PPM Ar-Rahmat untuk menyambut santri baru SMP maupun SMA.",
+      img: imgmastaf,
+      link: "/event/mastaf2024", 
+    },
+    {
+      title: "MUFEST (Muharram Festival)",
+      text: "Dalam rangka memperingati Muharram 1446 H, Organisasi Pelajar Pondok Pesantren Ar-Rahmat (OPPRA) mengadakan event spesial yang selalu ditunggu-tunggu oleh para santri setiap tahun, yang bernama “MUFEST”.",
+      img: imgmufest,
+      link: "/event/mufes", 
+    },
+    
   ];
 
   return (
