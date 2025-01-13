@@ -4,26 +4,26 @@ import Footer from '../../components/globalComponents/footer';
 import '../../css/artikel.css';
 
 
-import hg2 from '../../content/img/hariguru/penandatanganan simbolis SMA.jpg'
-import hg3 from '../../content/img/hariguru/penandatanganan simbolis SMP.jpg'
-import hg5 from '../../content/img/hariguru/penyampaian pesan dan kesan .jpg'
-import hg6 from '../../content/img/hariguru/Penyampaian.jpg'
+import hg2 from '../../content/img/17/img2.jpg'
+import hg3 from '../../content/img/17//img3.jpg'
+import hg5 from '../../content/img/17/img4.jpg'
+import hg6 from '../../content/img/17/img5.jpg'
 
 
 
-import img1 from '../../content/img/hariguru/hariguru.svg'
-import Artikel from '../../content/artikeldoc/hariguru';
+import img1 from '../../content/img/17/img1.jpg'
+import Artikel from '../../content/artikeldoc/17 agustus ';
 
-const Hariguru = () => {
+const Agustus = () => {
   const article = {
-    title: 'PERINGATAN HARI GURU NASIONAL',
-    date: '25 November 2024 | 07.00 WIB',
-    main: 'Pada 25 November 2024, Pondok Pesantren Ar-Rahmat mengadakan upacara Hari Guru Nasional yang diisi dengan drama kejutan, lagu, dan penandatanganan bingkai sebagai penghargaan untuk guru.',
+    title: 'Peringatan HUT RI ke 79 ',
+    date: '5 Agustus-17 Agustus | 07.00 WIB',
+    main: 'Dalam memperingati Hari Ulang Tahun Republik Indonesia yang ke-79 Pondok Pesantren Modern Ar-Rahmat mengadakan Upacara 17 Agustus yang berlangsung dengan Khidmat dan Classmeet yang di isi dengan berbagai perlombaan.',
     image: img1,
     content: <Artikel/>,
-    pembuat: 'M. Faiz Alif Yulistiawan',
-    ig: '@fay_368',
-    linkig: 'https://www.instagram.com/fay_368?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+    pembuat: 'Giannini Valentino',
+    ig: '@gianinni_v',
+    linkig: 'https://www.instagram.com/gianinni_v/'
   };
 
   const imageData = [
@@ -53,4 +53,4 @@ const Hariguru = () => {
   );
 };
 
-export default Hariguru;
+export default Agustus;

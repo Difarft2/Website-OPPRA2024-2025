@@ -38,37 +38,73 @@ const Subdevisi = () => {
 
       <div className="sub-container">
         <div className="sub">
-          <img src={bot} alt="BOT" />
+        <a
+          href="https://www.instagram.com/f.lavaa_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={bot} alt="BOT"  className='img-sub'/>
+        </a>
           <Link to="/devisi/bot">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>
         </div>
         <div className="sub">
-          <img src={keamanan} alt="Keamanan" />
+        <a
+          href="https://www.instagram.com/mar.ammar3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={keamanan} alt="Keamanan"  className='img-sub'/>
+        </a>
           <Link to="/devisi/keamanan">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>
         </div>
         <div className='sub'>
-          <img src={kesehatan} alt="Kesehatan" />
+        <a
+          href="https://www.instagram.com/ubaid_alhakim/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={kesehatan} alt="Kesehatan"  className='img-sub'/>
+        </a>
           <Link to="/devisi/kesehatan">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>
         </div>
         <div className="sub">
-          <img src={takmir} alt="Takmir" />
+        <a
+          href="https://www.instagram.com/akujojoz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={takmir} alt="Takmir"  className='img-sub'/>
+        </a>
           <Link to="/devisi/takmir">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>
         </div>
         <div className="sub">
-          <img src={bahasa} alt="Bahasa" />
+        <a
+          href="https://www.instagram.com/pb498_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={bahasa} alt="Bahasa"  className='img-sub'/>
+        </a>
           <Link to="/devisi/bahasa">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>
         </div>
         <div className="sub">
-          <img src={penerangan} alt="Penerangan" />
+        <a
+          href="https://www.instagram.com/rafifibrahim_m/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={penerangan} alt="Penerangan"  className='img-sub'/>
+        </a>
           <Link to="/devisi/ilan">
             <button className="sub-more-btn">PROFIL ➝</button>
           </Link>

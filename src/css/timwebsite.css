@@ -1,0 +1,119 @@
+.team-page {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styling */
+  .team-section {
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+  
+  .team-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #444;
+  }
+  
+  /* Team Member Cards */
+  .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    color: #333;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-member h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .team-member p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+
+  .contact-dev {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #000000;
+    text-align: center;
+  }
+  
+  .contact-dev h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #444;
+  }
+  
+  .contact-dev p,
+  .contact-dev ul {
+    margin: 20px 0;
+    color: #555;
+  }
+
+  .contact-dev p a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .contact-dev p a:hover {
+    color: #000000;
+  }
+  
+  .contact-dev ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-dev ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .contact-dev ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .contact-dev ul li a:hover {
+    color: #000000;
+  }
+
+  .team-name-link {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .team-name-link:hover {
+    color: #0056b3;
+  }
+  
+  

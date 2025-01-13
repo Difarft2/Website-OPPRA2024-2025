@@ -11,15 +11,28 @@
     align-items: center; 
 }
 
-.sub-container img {
-    width: 75%; 
+ .sub img {
+    width: 75%;
     height: auto;
-    object-fit: contain; 
+ }
+
+.img-sub{
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
 }
 
-.sub-container img:hover{
+.img-sub:hover{
+    width: 78%;
+    height: auto;
     transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .sub{

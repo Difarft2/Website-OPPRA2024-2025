@@ -5,8 +5,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/web2024/',
   define: {
-    "process.env.BLUEBIRD_DEBUG": "false",
+    "process.env.BLUEBIRD_DEBUG": "true",
   },
   plugins: [
     react(),
@@ -21,6 +22,8 @@ export default defineConfig({
     // }),
   ],
   build: {
+    manifest: true,
+    outDir: "dist",
     chunkSizeWarningLimit: 1100,
     rollupOptions: {
       output: {
