@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
-import img17 from "../../content/img/17/img1.jpg";
+import img17 from "../../content/img/17/ganii.jpg";
 import imgmastaf from '../../content/img/mastaf/Pelaksanaan Out Bond .jpg'
 import imgmufest from '../../content/img/mufest/img1.jpg'
 

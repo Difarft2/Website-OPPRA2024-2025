@@ -11,7 +11,7 @@ const teamData = {
       { name: "Adnan Alvictor ", role: "UI/UX Designer", instagram: "https://www.instagram.com/adnvctor_/" },
     ],
     webDevelopers: [
-      { name: "Dimas Fata ", role: "Frontend Developer", instagram: "https://instagram.com/chrisevans" },
+      { name: "Dimas Fata ", role: "Frontend Developer", instagram: "https://www.instagram.com/difarft.02/" },
       { name: "Revan Joharil ", role: "Frontend Developer", instagram: "https://www.instagram.com/vanmodeggmu/" },
     ],
     articleTeam: [
@@ -19,7 +19,7 @@ const teamData = {
       { name: "Giannini Valentino", role: "Content Writer", instagram: "https://www.instagram.com/gianinni_v/" },
       { name: "Richardo Valentino", role: "Content Writer", instagram: "https://www.instagram.com/_richardo_v/" },
       { name: "Giovanov Dia Putra Agung", role: "Content Writer", instagram: "https://www.instagram.com/_littleman21/" },
-      { name: "M Ilzam Ahlulfikri AL", role: "Content Writer", instagram: "https://www.instagram.com/ilzaam18/" },
+      { name: "M Ilzam Ahlulfikri Al Muwafiq", role: "Content Writer", instagram: "https://www.instagram.com/ilzaam18/" },
       { name: "M.Fikri Haikal Ardiananta", role: "Content Writer", instagram: "https://www.instagram.com/fikriihaikalll/" },
     ],
   };
@@ -106,7 +106,7 @@ function Timwebsite(){
                 {/* Article Team Section */}
                 <div className="team-section">
                     <h2>Article Team</h2>
-                    <div className="team-container">
+                    <div className="team-container article-team-container">
                     {teamData.articleTeam.map((member, index) => (
                         <div className="team-member" key={index}>
                         <a

@@ -9,6 +9,8 @@ import Footer from "../components/globalComponents/footer";
 import imghariguru from "../content/img/hariguru/hariguru.svg";
 import imgmastaf from '../content/img/mastaf/Pelaksanaan Out Bond .jpg'
 import imgmufest from '../content/img/mufest/img1.jpg'
+import img17 from "../content/img/17/ganii.jpg";
+
 
 
 function Event(){
@@ -65,7 +67,7 @@ function Event(){
     {
       title: "Peringatan HUT RI ke 79 ",
       text: "Dalam memperingati Hari Ulang Tahun Republik Indonesia yang ke-79 Pondok Pesantren Modern Ar-Rahmat mengadakan Upacara 17 Agustus yang berlangsung dengan Khidmat dan Classmeet yang di isi dengan berbagai perlombaan.",
-      img: imghariguru,
+      img: img17,
       link: "/event/17agustus",
     },
       ];

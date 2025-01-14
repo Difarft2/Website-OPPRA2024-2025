@@ -6,7 +6,7 @@ import gambar from '../.././assets/img/MainPhoto.svg'
 import Profidev from "../../components/devisi/subcomponent/profildev";
 import Anggota from "../../components/devisi/subcomponent/anggotadev";
 
-const title ="DIVISI I'LAN"
+const title ="DIVISI I'LAM"
 const desjudul ="PENERANGAN DAN INFORMASI"
 import logoilan from"../../assets/logo/divisi/ilan.svg"
 import { profilDevisiIlanPenerangan } from "../../content/profil";
@@ -17,7 +17,7 @@ function Ilan(){
     return(
     <div>
         <Helmet>
-            <title>Devisi-Ilan</title>
+            <title>Devisi-I'lam</title>
         </Helmet>
         <div>
             <Navbarr/>

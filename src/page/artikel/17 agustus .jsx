@@ -11,7 +11,7 @@ import hg6 from '../../content/img/17/img5.jpg'
 
 
 
-import img1 from '../../content/img/17/img1.jpg'
+import img1 from '../../content/img/17/ganii.jpg'
 import Artikel from '../../content/artikeldoc/17 agustus ';
 
 const Agustus = () => {

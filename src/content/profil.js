@@ -32,10 +32,10 @@ Di bidang kesehatan, divisi ini mengelola kegiatan seperti edukasi pola hidup se
 
 Dengan semangat peduli dan tanggung jawab, Divisi Kesehatan dan Kebersihan berkomitmen menciptakan lingkungan yang sehat, bersih, dan nyaman, sehingga mendukung para santri dalam menjalani aktivitas harian dengan optimal.`;
 
-// Profil Divisi Ilan dan Penerangan
-export const profilDevisiIlanPenerangan = `Divisi Ilan dan Penerangan adalah divisi yang bertugas menyampaikan informasi secara efektif kepada seluruh santri serta menjaga komunikasi internal dan eksternal pondok pesantren. Divisi ini bertanggung jawab dalam menyebarluaskan pengumuman, mempublikasikan kegiatan pesantren, serta mengelola media informasi, baik dalam bentuk cetak maupun digital.
+// Profil Divisi I'lam dan Penerangan
+export const profilDevisiIlanPenerangan = `Divisi I'lam dan Penerangan adalah divisi yang bertugas menyampaikan informasi secara efektif kepada seluruh santri serta menjaga komunikasi internal dan eksternal pondok pesantren. Divisi ini bertanggung jawab dalam menyebarluaskan pengumuman, mempublikasikan kegiatan pesantren, serta mengelola media informasi, baik dalam bentuk cetak maupun digital.
 
-Dengan pendekatan kreatif dan inovatif, Divisi Ilan dan Penerangan memastikan seluruh informasi penting tersampaikan dengan jelas dan tepat sasaran. Divisi ini juga mendukung pengembangan kemampuan komunikasi santri melalui pelatihan jurnalistik, desain media, dan penyiaran, sehingga para santri mampu berperan aktif dalam dunia informasi.`;
+Dengan pendekatan kreatif dan inovatif, Divisi I'lam dan Penerangan memastikan seluruh informasi penting tersampaikan dengan jelas dan tepat sasaran. Divisi ini juga mendukung pengembangan kemampuan komunikasi santri melalui pelatihan jurnalistik, desain media, dan penyiaran, sehingga para santri mampu berperan aktif dalam dunia informasi.`;
 
 // Profil Divisi Bahasa
 export const profilDevisiBahasa = `Divisi Bahasa adalah divisi yang bertugas meningkatkan kemampuan berbahasa santri, baik bahasa Arab maupun Inggris, sebagai bagian dari pendidikan di Pondok Pesantren Modern Ar-Rahmat. Divisi ini bertanggung jawab mengelola program-program pembelajaran bahasa, seperti kelas intensif, lomba kebahasaan, dan program praktik berbicara sehari-hari.
